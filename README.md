@@ -15,6 +15,29 @@ helm repo add castai-helm https://castai.github.io/helm-charts
 
 You can then run `helm search repo castai-helm` to see the charts.
 
+## Contribution
+
+Updates to helm charts should also contain doc updates. 
+We use [helm-docs](https://github.com/norwoodj/helm-docs) to generate docs. 
+
+To install helm-docs, run:
+
+```console
+brew install norwoodj/tap/helm-docs
+```
+
+To generate docs, run:
+
+```console
+make docs-{chart-name}
+```
+
+Or to generate docs for all charts, run:
+
+```console
+make docs-all
+```
+
 ## License
 
 <!-- Keep full URL links to repo files because this README syncs from main to gh-pages.  -->
